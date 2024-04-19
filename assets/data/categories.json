@@ -1,0 +1,93 @@
+[
+  {
+    "id": "shop",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Shop"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Winkel"
+      }
+    ]
+  },
+  {
+    "id": "webshop",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Webshop"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Online Winkel"
+      }
+    ]
+  },
+  {
+    "id": "ttrpg",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "TTRPG"
+      },
+      {
+        "countryCode": "nl",
+        "name": "TTRPG"
+      }
+    ]
+  },
+  {
+    "id": "play-space",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Play space"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Speelruimte"
+      }
+    ]
+  },
+  {
+    "id": "boardgames",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Boardgames"
+      },
+      {
+        "countryCode": "nl",
+        "name": "bordspellen"
+      }
+    ]
+  },
+  {
+    "id": "cardgames",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Cardgames / TCG"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Kaartspellen"
+      }
+    ]
+  },
+  {
+    "id": "wargames",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Wargames"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Wargames"
+      }
+    ]
+  }
+]

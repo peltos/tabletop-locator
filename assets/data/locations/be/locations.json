@@ -1,0 +1,16 @@
+
+
+{
+  "nationality": "belgie",
+  "countryCode": "be",
+  "items": [
+    {
+      "name": "Het Spelhuis (Zonhoven)",
+      "logo": "https://www.spelhuis.be/Files/7/112000/112353/Protom/855657/Media/620x100/Spelhuis%20logo_nl.jpg",
+      "latlng": [50.99805505231816, 5.392837472173233],
+      "province": "limburg",
+      "url": "https://www.spelhuis.be/",
+      "desc": "Het Spelhuis is een spellenwinkel (met webshop) gelegen in Zonhoven, in het midden van. Limburg. In onze speciaalzaak vind je bordspellen"
+    }
+  ]
+}

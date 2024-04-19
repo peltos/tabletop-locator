@@ -1,50 +1,81 @@
 <template>
-  <div class="flex flex-col md:flex-row bg-slate-800">
-    <div class="w-96 h-32 md:h-full p-4 ">
-      <h1 class="text-xl font-bold mb-4 text-white">Tabletop Locator</h1>
-      <input type="text" placeholder="Search..." class="border-2 p-1 w-full rounded-md">
-    </div>
-    <div class="w-[100vw] h-[100vh]" id="map">
-    </div>
+  <div class="flex flex-col md:flex-row bg-white items-stretch h-[100vh] w-full overflow-hidden relative">
+    <Search :categories="categories" @searchPrompt="filterSearch" />
+    <Map :locations="locationsFiltered" />
   </div>
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue';
-  import LocationsNL from './assets/locations/nl/locations.json';
-  
-  onMounted(() => {
-    let map = L.map('map').setView([52.09027905360301, 5.107968723830769], 7);
+useHead({
+  title: 'Tabletop Locator',
+  meta: [
+    { name: 'description', content: 'Find your tabletopshop near you!' }
+  ],
+})
+import { ref } from 'vue';
+import Fuse from 'fuse.js'
 
-    // ask location and zoom in on your location if accepted
-    navigator.geolocation.getCurrentPosition(
-      (position) => {map.setView([position.coords.latitude, position.coords.longitude], 12)}, 
-      (error) => console.warn(error.message)
-    );
+import categoriesRaw from './assets/data/categories.json';
+import locationsNL from './assets/data/locations/nl/locations.json';
+import locationsBE from './assets/data/locations/be/locations.json';
 
-    // initializing mapp
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+let locationsAll = [locationsNL, locationsBE];
+let locationsFiltered = ref([]);
+let categories = ref(categoriesRaw.sort(compareCategories))
 
-    // markerclusters
-    var markers = L.markerClusterGroup();
+onMounted(() => {
+  filterSearch('')
+})
 
-    // adding all markers
-    LocationsNL.forEach(loc => {
-      let marker = L.marker(loc.latlng);
-      marker.bindPopup(`
-        <div class="relative w-full h-full flex flex-col items-center"> 
-          <img class="w-24 max-h-24 mb-4 object-contain" src="${loc.logo}"/>
-          <h2 class="text-xl font-bold mb-4 text-center">${loc.name}</h2>
-          <p class>${loc.desc}</p> 
-        </div>
-      `);
-      markers.addLayer(marker);
+function filterSearch(newPrompt) {
+  locationsFiltered.value = [] // reset locations
+
+  // reset when search is empty
+  if (newPrompt === '') {
+    locationsAll.forEach((locationslang) => {
+      locationsFiltered.value = [...locationsFiltered.value, ...locationslang.items]
     });
+    locationsFiltered.value.sort(comparelocations);
+    return
+  }
 
-    // adding markers and markerclusters
-    map.addLayer(markers);
+  // check if countrycode or nationality is typed
+  let isPromptNationality = false;
+  locationsAll.forEach((locationslang) => {
+    if (locationslang.nationality === newPrompt || locationslang.countryCode === newPrompt) {
+      locationsFiltered.value = [...locationslang.items]
+      isPromptNationality = true;
+      return
+    }
   });
+  if (isPromptNationality) {
+    locationsFiltered.value.sort(comparelocations);
+    return;
+  }
+  isPromptNationality = false;
+
+  // remaining fuzzy search
+  locationsAll.forEach((locationslang) => {
+    let filter = new Fuse(locationslang.items, {
+      keys: ['desc', 'name', 'province']
+    }).search(newPrompt).map((elm) => elm.item);
+
+    locationsFiltered.value = [...locationsFiltered.value, ...filter]
+  })
+
+  locationsFiltered.value.sort(comparelocations);
+}
+
+function compareCategories(a, b) {
+  if (a.id < b.id) return -1;
+  if (a.id > b.id) return 1;
+  return 0;
+}
+
+function comparelocations(a, b) {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+}
+
 </script>

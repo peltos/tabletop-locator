@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.popup a[href] {
+  @apply text-green-dark underline hover:text-green-base focus:hover:text-green-base visited:hover:text-green-base transition-colors
+}
+
+input, textarea, select {
+  @apply border-green-base focus:ring ring-green-base transition-all
+}
