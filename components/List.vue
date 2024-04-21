@@ -1,23 +1,26 @@
 <template>
   <!-- <Popup :location="currentIRLLocation" :popupActive="popupActive"/> -->
-  <div class="w-full p-4 md:pt-24">
-    <ul class="container mx-auto">
-      <li v-for="location in IRLLocationsFiltered">
-        {{ location.name }}
+  <div class="list-container container mx-auto w-full p-4 sm:p-0 sm:pt-4 md:pt-24 transition-none">
+    <ul class="">
+      <li class="first:border-t-2 border-b-2 border-green-base dark:border-slate-base py-4 flex gap-4" v-for="location in IRLLocationsFiltered">
+        <img :src="location.logo" :alt="location.name">
+        <div>
+          <strong>{{ location.name }} </strong><br>
+          {{ location.desc }}
+        </div>
       </li>
     </ul>
-    
+
+    <!-- <iframe class="w-96 h-96" src="http://localhost:3000/?screen=map&options=0" frameborder="0"></iframe> -->
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, defineProps, watch } from 'vue';
 import Fuse from 'fuse.js'
 
-import IRL_Locations_NL from '../assets/data/locations/nl/irl.json';
-import IRL_Locations_BE from '../assets/data/locations/be/irl.json';
+import ONLINE_LOCATIONS from '../assets/data/onlineLocations.json';
 
-let IRLLocationsAll = [IRL_Locations_NL, IRL_Locations_BE];
+let IRLLocationsAll = [ONLINE_LOCATIONS];
 let IRLLocationsFiltered = ref([]);
 
 const props = defineProps(['prompt'])

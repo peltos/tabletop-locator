@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.popup a[href] {
+.popup a[href], .list-container a[href] {
   @apply text-green-dark underline hover:text-green-base focus:hover:text-green-base visited:hover:text-green-base transition-colors
 }
 
 input, textarea, select {
-  @apply border-green-base focus:ring ring-green-base transition-all
+  @apply focus:outline-green-base dark:focus:outline-slate-base border-green-base dark:border-slate-base focus:ring ring-green-base dark:ring-slate-base transition-all
+}
+
+.btn {
+  @apply focus:outline-green-base dark:focus:outline-slate-base bg-green-base hover:bg-green-light focus:bg-green-light dark:bg-slate-base dark:hover:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
+}
+
+body.dark .leaflet-tile-pane {
+  @apply saturate-50 grayscale-[.5]
+}
+
+.leaflet-top .leaflet-control {
+  @apply md:mt-16
 }

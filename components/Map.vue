@@ -4,15 +4,19 @@
 </template>
 
 <script setup>
-import { ref, onMounted, defineProps, watch } from 'vue';
 import Fuse from 'fuse.js'
 
-import IRL_Locations_NL from '../assets/data/locations/nl/irl.json';
-import IRL_Locations_BE from '../assets/data/locations/be/irl.json';
-
+// location data
+import IRL_Locations_NL from '../assets/data/irlLocations/nl/locations.json';
+import IRL_Locations_BE from '../assets/data/irlLocations/be/locations.json';
 let IRLLocationsAll = [IRL_Locations_NL, IRL_Locations_BE];
 let IRLLocationsFiltered = ref([]);
 
+// leaflet variables
+let map;
+let markers;
+
+// custom variables
 const props = defineProps(['prompt','screen'])
 const prompt = computed(() => props.prompt);
 const screen = computed(() => props.screen);
@@ -21,12 +25,11 @@ let currentIRLLocation = ref({});
 let popupActive = ref(false);
 let timeoutPopupAnimation;
 
-let map;
-let markers;
-
 watch(prompt, (newPrompt) => {
-  filterSearch(newPrompt);
-  AddingMarkers();
+  filterSearch(newPrompt); //filter data base on the prompt
+  AddingMarkers(); // refresh the markers
+
+  // clear data on the popup when the hide animation is finished
   clearTimeout(timeoutPopupAnimation);
   timeoutPopupAnimation = setTimeout(() => {
     currentIRLLocation.value = {};
@@ -35,7 +38,9 @@ watch(prompt, (newPrompt) => {
 })
 
 watch(screen, () => {
-  filterSearch('');
+  filterSearch(''); // reset search
+  
+  // clear data on the popup when the hide animation is finished
   clearTimeout(timeoutPopupAnimation);
   timeoutPopupAnimation = setTimeout(() => {
     currentIRLLocation.value = {};
@@ -45,60 +50,68 @@ watch(screen, () => {
   // ask location and zoom in on your location if accepted
   setTimeout(() => {
     navigator.geolocation.getCurrentPosition(
-    (position) => { map.setView([position.coords.latitude, position.coords.longitude], 12) },
-    (error) => {
-      map.setView(defaultCoords, 7);
-      console.warn(error.message)
-    }
-  );
+      (position) => { map.setView([position.coords.latitude, position.coords.longitude], 12) },
+      (error) => {
+        map.setView(defaultCoords, 7);
+        console.warn(error.message)
+      }
+    );
   },300)
 })
 
 onMounted(() => {
-  map = L.map('map').setView(defaultCoords, 7);
+  // initializing
+  map = L.map('map',{zoomControl: false}).setView(defaultCoords, 7);
 
   // ask location and zoom in on your location if accepted
   navigator.geolocation.getCurrentPosition(
-    (position) => { map.setView([position.coords.latitude, position.coords.longitude], 12) },
+    (position) => map.setView([position.coords.latitude, position.coords.longitude], 12),
     (error) => console.warn(error.message)
   );
 
-  // initializing mapp
+  // initializing map layer
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     minZoom: 3,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 
-  filterSearch('');
-  AddingMarkers();
+  // change position of the zoom controls
+  L.control.zoom({
+      position: 'topright'
+  }).addTo(map);
+
+  filterSearch(''); // init data
+  AddingMarkers(); // init markers
 });
 
 function AddingMarkers() {
   if (markers) map.removeLayer(markers);
 
-  // markerclusters
+  // initializing markerclusters
   markers = L.markerClusterGroup();
-  // adding all markers
+
+  // creating all markers
   if (!IRLLocationsFiltered) return
-  IRLLocationsFiltered.value.forEach(loc => {
-    let marker = L.marker(loc.latlng);
-    marker.on('click', () => {
-      if (currentIRLLocation.value === loc) {
-        clearTimeout(timeoutPopupAnimation);
-        timeoutPopupAnimation = setTimeout(() => {
-          currentIRLLocation.value = {};
-        }, 200)
-        return popupActive.value = false;
+    IRLLocationsFiltered.value.forEach(loc => {
+      
+      let marker = L.marker(loc.latlng);
+      marker.on('click', () => {
+        if (currentIRLLocation.value === loc) {
+          clearTimeout(timeoutPopupAnimation);
+          timeoutPopupAnimation = setTimeout(() => {
+            currentIRLLocation.value = {};
+          }, 200)
+          return popupActive.value = false;
+        }
+        popupActive.value = true;
+        currentIRLLocation.value = loc
       }
-      popupActive.value = true;
-      currentIRLLocation.value = loc
-    }
     );
     markers.addLayer(marker);
   });
 
-  // adding markers and markerclusters
+  // adding markers to markerclusters
   map.addLayer(markers);
 }
 
@@ -137,7 +150,6 @@ function filterSearch(newPrompt) {
 
     IRLLocationsFiltered.value = [...IRLLocationsFiltered.value, ...filter]
   })
-
   IRLLocationsFiltered.value.sort(compareIRLLocations);
 }
 
