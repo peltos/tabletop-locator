@@ -9,27 +9,6 @@ module.exports = {
     "./app.vue",
     "./error.vue",
   ],
-  theme: {
-    extend: {
-      colors: {
-        white: '#fff',
-        lightgray: '#eee',
-        blue: {
-          'base':'#336699',
-          'light':'#86bbd8',
-        },
-        green: {
-          'dark':'#0F3A08',
-          'base':'#5AAB4E',
-          'light':'#daf7dc',
-        },
-        slate: {
-          'base':'#0f172a',
-          'light':'#1e293b',
-        },
-      },
-    },
-  },
   corePlugins: {
     container: false
   },

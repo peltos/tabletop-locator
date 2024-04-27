@@ -1,18 +1,26 @@
 <template>
-  <div
-    class="flex flex-col md:flex-row bg-green-light dark:bg-slate-light items-stretch h-[100vh] w-full overflow-hidden relative dark:text-lightgray">
+  <div class="md:flex overflow-hidden">
 
     <!-- Header -->
     <SectionHeader :screen="screen" :options="options" @emitScreen="setScreen" @emitPrompt="setPrompt" />
 
     <!-- Content -->
-    <div class="w-[200vw] h-full flex"
-      :class="[screen === 'list' ? ' -ml-[100vw]' : '', doesHaveAnimation ? ' transition-all duration-300' : '']">
-      <div class="w-[100vw] h-full">
-        <PageMap :prompt="prompt" :screen="screen" />
+    <div class="w-full md:h-[100vh] relative">
+      
+      <!-- Searchbar -->
+      <div class="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 z-20">
+        <div class="w-full py-2 px-4 md:py-4 md:px-8 md:rounded-b-xl bg-white dark:bg-stone-800 shadow-lg">
+          <Search class="" @searchPrompt="setPrompt" :screen="screen" />
+        </div>
       </div>
-      <div class="w-[100vw] h-full overflow-auto">
-        <PageList :prompt="prompt" />
+
+      <div class="grid grid-cols-2 w-[200%] h-full" :class="[screen === 'list' ? ' -ml-[100%]' : '', doesHaveAnimation ? ' transition-all duration-300' : '']">
+        <div class="">
+          <PageMap :prompt="prompt" :screen="screen" />
+        </div>
+        <div class="bg-stone-100 dark:bg-stone-700 h-[calc(100vh-145px)] md:h-[100vh] overflow-auto">
+          <PageList :prompt="prompt" />
+        </div>
       </div>
     </div>
   </div>
@@ -30,13 +38,16 @@ useHead({
     { rel: 'apple-touch-icon', sizes: "180x180", href: development + '/favicon/apple-touch-icon.png' },
     { rel: 'icon', type: 'image/x-icon', sizes: "32x32", href: development + '/favicon/favicon-32x32.png' },
     { rel: 'icon', type: 'image/x-icon', sizes: "16x16", href: development + '/favicon/favicon-16x16.png' },
-    { rel: 'manifest', href: development + '/favicon/site.manifest' },
+    { rel: 'manifest', href: development + '/favicon/site.webmanifest' },
     { rel: 'mask-icon', href: development + '/favicon/safari-pinned-tab.svg' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: "#5aab4e" },
     { name: 'theme-color', content: "#5aab4e" }
-  ]
+  ],
+  bodyAttrs: {
+    class: 'overflow-hidden'
+  }
 })
 let prompt = ref('');
 let screen = ref('map');

@@ -1,21 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.popup a[href], .list-container a[href] {
-  @apply text-green-dark underline hover:text-green-base focus:hover:text-green-base visited:hover:text-green-base transition-colors
+a[href] {
+  @apply text-lime-900 underline hover:text-lime-700 focus:hover:text-lime-700 visited:hover:text-lime-700 dark:text-lime-500 dark:hover:text-lime-700 dark:focus:hover:text-lime-700 dark:visited:hover:text-lime-700 transition-colors
 }
 
 input, textarea, select {
-  @apply focus:outline-green-base dark:focus:outline-slate-base border-green-base dark:border-slate-base focus:ring ring-green-base dark:ring-slate-base transition-all
+  @apply focus:outline-lime-700 dark:focus:outline-slate-900 border-lime-700 dark:border-slate-900 focus:ring ring-lime-700 dark:ring-slate-900 transition-all
 }
 
 .btn {
-  @apply focus:outline-green-base dark:focus:outline-slate-base bg-green-base hover:bg-green-light dark:bg-slate-base dark:hover:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
+  @apply bg-transparent !no-underline opacity-70 hover:opacity-100 hover:bg-[#84cc1633] py-2 px-4 flex gap-2 justify-center items-center rounded-xl transition
+}
+
+.btn-full {
+  @apply bg-lime-500 opacity-100 !text-lime-900 font-bold hover:bg-[#84cc1666] hover:!text-lime-300
 }
 
 .btn-active {
-  @apply outline-green-base dark:outline-slate-base hover:bg-green-base bg-green-light focus:bg-green-light dark:hover:bg-slate-base dark:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
+  @apply bg-[#84cc1633] opacity-100
+}
+
+.btn-small {
+  @apply py-1 px-2
 }
 
 body.dark .leaflet-tile-pane {

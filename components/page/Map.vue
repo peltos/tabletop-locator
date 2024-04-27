@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:h-[100vh] h-full z-10" id="map"> </div>
+  <div class="w-full md:h-[100vh] h-full z-10 [&_a]:!no-underline" id="map"> </div>
   <SectionPopup :location="currentIRLLocation" :popupActive="popupActive"/>
 </template>
 

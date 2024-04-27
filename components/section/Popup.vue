@@ -1,10 +1,10 @@
 <template>
-  <div class="popup absolute z-50 -translate-x-1/2 bottom-0 sm:bottom-4 left-1/2 
+  <div class="popup absolute z-20 -translate-x-1/2 bottom-0 sm:bottom-4 left-1/2 
   w-full sm:w-2/3 lg:w-1/2 max-h-[40vh] flex flex-col 
-  bg-white sm:rounded-xl border-t-4 transition-all shadow-lg text-black" :class="!popupActive ? '!-bottom-96' : ''">
+  bg-stone-50 sm:rounded-xl transition-all shadow-lg text-black" :class="!popupActive ? '!-bottom-96' : ''">
 
     <!-- Popup header -->
-    <div class="flex p-4 mx-4 justify-stretch items-stretch border-b-2 border-green-base">
+    <div class="flex p-4 mx-4 justify-stretch items-stretch border-b-2 ">
       <a v-if="location.url" :href="location.url" class="w-full text-xl font-bold text-center">
         <h2>{{ location.name }}</h2>
       </a>
