@@ -14,7 +14,7 @@ input, textarea, select {
 }
 
 .btn-full {
-  @apply bg-lime-500 opacity-100 !text-lime-900 font-bold hover:bg-[#84cc1666] hover:!text-lime-300
+  @apply bg-lime-500 opacity-100 !text-lime-900 font-bold hover:bg-[#84cc1666] dark:hover:!text-lime-300
 }
 
 .btn-active {

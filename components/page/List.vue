@@ -13,7 +13,7 @@
             <strong v-if="location.name" class="block">{{ location.name }} </strong>
             <span v-if="location.subtitle" class="block">{{ location.subtitle }} </span>
           </div>
-          <a v-if="location.url" :href="location.url" class="btn btn-full">
+          <a v-if="location.url" :href="location.url" target="_blank" class="btn btn-full">
             <ClientOnly> <!-- solved a Hydration node mismatch error -->
               <font-awesome-icon :icon="['fas', 'globe']" />
             </ClientOnly>
