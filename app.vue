@@ -19,6 +19,7 @@
 </template>
 
 <script setup>
+let development = process.env.NODE_ENV !== 'production' ? '': '/tabletop-locator'
 
 useHead({
   title: 'Tabletop Locator',
@@ -26,11 +27,11 @@ useHead({
     { name: 'description', content: 'Find your tabletopshop near you!' }
   ],
   link: [
-    { rel: 'apple-touch-icon', sizes: "180x180", href: '/favicon/apple-touch-icon.png' },
-    { rel: 'icon', type: 'image/x-icon', sizes: "32x32", href: '/favicon/favicon-32x32.png' },
-    { rel: 'icon', type: 'image/x-icon', sizes: "16x16", href: '/favicon/favicon-16x16.png' },
-    { rel: 'manifest', href: '/favicon/site.manifest' },
-    { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg' }
+    { rel: 'apple-touch-icon', sizes: "180x180", href: development + '/favicon/apple-touch-icon.png' },
+    { rel: 'icon', type: 'image/x-icon', sizes: "32x32", href: development + '/favicon/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/x-icon', sizes: "16x16", href: development + '/favicon/favicon-16x16.png' },
+    { rel: 'manifest', href: development + '/favicon/site.manifest' },
+    { rel: 'mask-icon', href: development + '/favicon/safari-pinned-tab.svg' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: "#5aab4e" },
