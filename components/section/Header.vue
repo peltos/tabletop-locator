@@ -23,18 +23,20 @@
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
             <img class="w-8" src="~/assets/logos/logo_white.svg" alt="Tabletop locator logo">
           </ClientOnly>
-          <p class="hidden [@media(min-width:400px)]:block text-[#fff] font-bold text-lg leading-5">Tabletop <br> locator</p>
+          <p class="hidden [@media(min-width:400px)]:block text-[#fff] font-bold text-lg leading-5">
+            Tabletop <br> locator
+          </p>
         </div>
         <Search @searchPrompt="emitPrompt" :screen="screen" />
         <div class="text-white [@media(min-width:500px)]:w-[120px] flex justify-end">
           <button class="p-3" @click="setDarkMode(!darkMode)">
-          <ClientOnly v-if="darkMode"> <!-- solved a Hydration node mismatch error -->
-            <font-awesome-icon :icon="['fas', 'sun']" />
-          </ClientOnly>
-          <ClientOnly v-if="!darkMode"> <!-- solved a Hydration node mismatch error -->
-            <font-awesome-icon :icon="['fas', 'moon']" />
-          </ClientOnly>
-        </button>
+            <ClientOnly v-if="darkMode"> <!-- solved a Hydration node mismatch error -->
+              <font-awesome-icon :icon="['fas', 'sun']" />
+            </ClientOnly>
+            <ClientOnly v-if="!darkMode"> <!-- solved a Hydration node mismatch error -->
+              <font-awesome-icon :icon="['fas', 'moon']" />
+            </ClientOnly>
+          </button>
         </div>
       </div>
     </div>
@@ -75,12 +77,12 @@
 </template>
 
 <script setup>
-const props = defineProps(['screen','options'])
+const props = defineProps(['screen', 'options'])
 let screen = ref(props.screen);
 let options = computed(() => props.options);
 let darkMode = ref(false);
 
-const emit = defineEmits(['emitScreen','emitPrompt'])
+const emit = defineEmits(['emitScreen', 'emitPrompt'])
 function emitScreen(newScreen) {
   emit('emitPrompt', ''); // reset prompt
   emit('emitScreen', newScreen); // for the parent
@@ -94,9 +96,9 @@ function setDarkMode(newDarkMode) {
   darkMode.value = newDarkMode;
   useHead({
     bodyAttrs: {
-      class:  computed(() => {
+      class: computed(() => {
         if (darkMode.value) return 'dark';
-        
+
         return '';
       }),
     }

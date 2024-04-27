@@ -1,12 +1,41 @@
-{
-  "nationality": "nederland",
-  "countryCode": "nl",
-  "items": [
-    {
-      "name": "Dutch20",
-      "logo": "https://www.dutch20.nl/wp-content/uploads/2023/04/logo_community_black_full_color_transparant-e1684083554932.png",
-      "url": "https://www.dutch20.nl/",
-      "desc": "Zin om samen een spelletje te doen? Samen met de leukste Utrechtse café's hosten we spelletjesavonden.  De hosts van Spellenwinkel Subcultures zorgen voor demo’s van de nieuwste games, maar je kunt ook zelf een spel meenemen. Aanmelden is niet nodig, kom langs en speel mee!"
-    }
-  ]
-}
+[
+  {
+    "name": "Dutch20",
+    "logo": "https://www.dutch20.nl/wp-content/uploads/2023/04/logo_community_black_full_color_transparant-e1684083554932.png",
+    "url": "https://www.dutch20.nl/",
+    "tags": ["TTRPG", "Community", "Nederlands", "English", "Heel Nederland"],
+    "socials":  {
+      "website": "http://dutch20.nl/",
+      "discord": "http://discord.gg/dutch20",
+      "reddit": "http://reddit.com/r/dndnl",
+      "instagram": "https://www.instagram.com/stichting_dutch20",
+      "facebook": "https://www.facebook.com/Dutch20",
+      "youtube": "https://www.youtube.com/@Dutch20",
+      "linkedin": "https://www.linkedin.com/company/stichting-dutch20"
+    },
+    "desc": "Dutch20 is een stichting die zich richt op het bij elkaar brengen van rollenspelenthousiastelingen, met name mensen die geïnteresseerd zijn in het spelen van Dungeons & Dragons en vele andere populaire tabletop roleplayinggames. Dit kan variëren van fantasy tot cyberpunk, van wild west tot scifi en ga zo maar door."
+  },
+  {
+    "name": "Games Guild",
+    "logo": "https://ugc.production.linktr.ee/FmIav8HVRGKkgsgDv3AX_nvsZhdx185pN7mM7?io=true&size=avatar-v3_0",
+    "url": "https://www.gamesguild.nl/",
+    "socials":  {
+      "website": "http://gamesguild.nl/",
+      "discord": "https://discord.com/invite/nSMwRkG",
+      "reddit": "http://reddit.com/r/dndnl",
+      "instagram": "https://instagram.com/ggalphen",
+      "facebook": "https://www.facebook.com/thegamesguild",
+      "youtube": "https://www.youtube.com/channel/UClmU1HxYoR-OyBP0ifu_l1Q/featured",
+      "tiktok": "https://tiktok.com/@gamesguild",
+      "twitch": "https://www.twitch.tv/gamesguildtv",
+      "email": "info@gamesguild.nl"
+    },
+    "desc": "The Guild supports a range of hobby games such as Magic the Gathering, Warhammer, Dungeons & Dragons"
+  },
+  {
+    "name": "Pub Heroes",
+    "logo": "https://pubheroes.nl/wp-content/uploads/2021/01/Pub-Heroes-Logo-1.svg",
+    "url": "https://pubheroes.nl/nl/",
+    "desc": "Pub Heroes organiseert epische avonturen voor jou en je vrienden, zonder het levensgevaar en harde werken dat daar normaal gesproken bij komt kijken. En daarnaast zorgen wij voor hapjes, drankjes, spelmateriaal en getalenteerde storytellers die jullie door het avontuur leiden. Scoor nu een ticket, en word een held!"
+  }
+]

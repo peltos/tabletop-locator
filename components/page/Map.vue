@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:h-[100vh] h-full z-10" id="map"> </div>
-  <Popup :location="currentIRLLocation" :popupActive="popupActive"/>
+  <SectionPopup :location="currentIRLLocation" :popupActive="popupActive"/>
 </template>
 
 <script setup>
