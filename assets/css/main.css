@@ -11,7 +11,11 @@ input, textarea, select {
 }
 
 .btn {
-  @apply focus:outline-green-base dark:focus:outline-slate-base bg-green-base hover:bg-green-light focus:bg-green-light dark:bg-slate-base dark:hover:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
+  @apply focus:outline-green-base dark:focus:outline-slate-base bg-green-base hover:bg-green-light dark:bg-slate-base dark:hover:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
+}
+
+.btn-active {
+  @apply outline-green-base dark:outline-slate-base hover:bg-green-base bg-green-light focus:bg-green-light dark:hover:bg-slate-base dark:bg-slate-light dark:focus:bg-slate-light border-2 border-green-base dark:border-slate-base transition px-2 py-1 md:px-4 md:py-2 rounded-xl flex items-center gap-2
 }
 
 body.dark .leaflet-tile-pane {

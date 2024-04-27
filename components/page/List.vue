@@ -1,11 +1,19 @@
 <template>
   <!-- <Popup :location="currentIRLLocation" :popupActive="popupActive"/> -->
   <div class="list-container container mx-auto w-full p-4 sm:p-0 sm:pt-4 md:pt-24 transition-none">
-    <ul class="">
-      <li class="border-b-2 last:border-none border-green-base dark:border-slate-base py-4 grid grid-cols-5 gap-4" v-for="location in OnlineLocationsFiltered">
-        <img class="h-ful object-contain self-center" :src="location.logo" :alt="location.name">
+    <ul class="grid xl:grid-cols-2  gap-4">
+      <li v-for="location in OnlineLocationsFiltered" class="bg-white p-4 rounded-xl flex flex-col gap-2" >
+        <div class="flex gap-2">
+          <div class="bg-lightgray w-12 h-12 rounded-full overflow-hidden flex justify-center items-center">
+            <img class="object-contain self-center" :src="location.logo" :alt="location.name">
+          </div>
+          <div class="w-[calc(100%-3rem)]">
+            <strong v-if="location.name" class="block">{{ location.name }} </strong>
+            <span v-if="location.subtitle" class="block">{{ location.subtitle }} </span>
+          </div>
+        </div>
         <div class="col-span-3">
-          <strong v-if="location.name" class="block">{{ location.name }} </strong>
+          <strong>Description</strong>
           <p v-if="location.desc">{{ location.desc }}</p>
           <a v-if="location.url" :href="location.url">{{ location.url }}</a>
           <ul v-if="location.tags" class="mt-4 flex flex-wrap gap-2">

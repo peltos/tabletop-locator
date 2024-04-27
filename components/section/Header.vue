@@ -43,7 +43,7 @@
 
     <div class="w-full border-b-4 py-2 px-4 md:py-4 md:px-8 md:rounded-b-xl bg-white shadow-lg">
       <div class="container mx-auto flex gap-4 justify-around items-center font-bold">
-        <button v-if="options" @click="emitScreen('map')" class="btn">
+        <button v-if="options" @click="emitScreen('map')" :class="screen === 'map' ? 'btn-active' : 'btn'">
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
             <font-awesome-icon :icon="['fas', 'earth-americas']" />
           </ClientOnly>
@@ -52,7 +52,7 @@
 
         <Search class="hidden md:block" @searchPrompt="emitPrompt" :screen="screen" />
 
-        <button v-if="options" @click="emitScreen('list')" class="btn">
+        <button v-if="options" @click="emitScreen('list')" :class="screen === 'list' ? 'btn-active' : 'btn'">
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
             <font-awesome-icon :icon="['fas', 'computer']" />
           </ClientOnly>
@@ -81,6 +81,8 @@ const props = defineProps(['screen', 'options'])
 let screen = ref(props.screen);
 let options = computed(() => props.options);
 let darkMode = ref(false);
+
+console.log(props.screen);
 
 const emit = defineEmits(['emitScreen', 'emitPrompt'])
 function emitScreen(newScreen) {

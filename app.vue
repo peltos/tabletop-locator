@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-col md:flex-row bg-green-light dark:bg-slate-light items-stretch h-[100vh] w-full overflow-hidden relative dark:text-white">
+    class="flex flex-col md:flex-row bg-green-light dark:bg-slate-light items-stretch h-[100vh] w-full overflow-hidden relative dark:text-lightgray">
 
     <!-- Header -->
-    <SectionHeader :options="options" @emitScreen="setScreen" @emitPrompt="setPrompt" />
+    <SectionHeader :screen="screen" :options="options" @emitScreen="setScreen" @emitPrompt="setPrompt" />
 
     <!-- Content -->
     <div class="w-[200vw] h-full flex"
