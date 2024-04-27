@@ -25,9 +25,17 @@ useHead({
   meta: [
     { name: 'description', content: 'Find your tabletopshop near you!' }
   ],
-  bodyAttrs: {
-    // class: 'dark'
-  }
+  link: [
+    { rel: 'apple-touch-icon', sizes: "180x180", href: '/favicon/apple-touch-icon.png' },
+    { rel: 'icon', type: 'image/x-icon', sizes: "32x32", href: '/favicon/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/x-icon', sizes: "16x16", href: '/favicon/favicon-16x16.png' },
+    { rel: 'manifest', href: '/favicon/site.manifest' },
+    { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg' }
+  ],
+  meta: [
+    { name: 'msapplication-TileColor', content: "#5aab4e" },
+    { name: 'theme-color', content: "#5aab4e" }
+  ]
 })
 let prompt = ref('');
 let screen = ref('map');
