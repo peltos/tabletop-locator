@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    baseURL: '/tabletop-locator/',
     head: {
       charset: 'utf-8',
       link: [
