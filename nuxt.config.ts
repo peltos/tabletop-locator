@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+let development = process.env.NODE_ENV !== 'production'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: '/tabletop-locator/',
+    baseURL: development ? '/': '/tabletop-locator/', // Change this if you want to deploy this app on your own server
     head: {
       charset: 'utf-8',
       link: [

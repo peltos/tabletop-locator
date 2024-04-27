@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+<p align="center">
+<img src="./assets/logos/logo_emblem_green.svg" alt="Tabletop logo" style="max-width:200px;">
+</p>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Tabletop Locator
+
+The open source app to find all nearby locations for Tabletop related shops and events!
+
+## Website
+
+https://peltos.github.io/tabletop-locator/
 
 ## Setup
 
-Make sure to install the dependencies:
+In case you wish to help with the build:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+yarn install # install the libraries
+yarn dev # look or work on it locally
+yarn build # build the app for deployment
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
