@@ -32,7 +32,7 @@
         <ul v-if="location.socials" class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4 break-all">
           <li v-for="(value, key) in location.socials" class="">
             <a class="capitalize flex gap-2 items-center" :href="value">
-              <div class="bg-stone-200 dark:bg-stone-600 text-black rounded-full p-1">
+              <div class="bg-stone-200 dark:bg-stone-600 text-black dark:text-white rounded-full p-1">
                 <ClientOnly v-if="checkExistingFABrandicon(key)"> <!-- solved a Hydration node mismatch error -->
                   <font-awesome-icon class="w-6" :icon="['fab', key]" />
                 </ClientOnly>
