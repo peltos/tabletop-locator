@@ -69,11 +69,24 @@
     "lang": [
       {
         "countryCode": "en",
-        "name": "Cardgames / TCG"
+        "name": "Cardgames"
       },
       {
         "countryCode": "nl",
         "name": "Kaartspellen"
+      }
+    ]
+  },
+  {
+    "id": "tcg",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Trading Card Games"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Trading Card Games"
       }
     ]
   },

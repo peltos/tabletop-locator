@@ -1,6 +1,10 @@
 <template>
   <div class="w-full md:h-[100vh] h-full z-10 [&_a]:!no-underline" id="map"> </div>
-  <SectionPopup :location="currentIRLLocation" :popupActive="popupActive"/>
+  <div class="popup absolute z-20 -translate-x-1/2 bottom-0 sm:bottom-4 left-1/2 
+  w-full sm:w-2/3 lg:w-1/2 max-h-[40vh] flex flex-col 
+  bg-stone-50 sm:rounded-xl transition-all shadow-lg text-black" :class="!popupActive ? '!-bottom-96' : ''">
+    <SectionCard :locations="[currentIRLLocation]"></SectionCard>
+  </div>
 </template>
 
 <script setup>
@@ -99,7 +103,7 @@ function AddingMarkers() {
   // creating all markers
   if (!IRLLocationsFiltered) return
     IRLLocationsFiltered.value.forEach(loc => {
-      
+      if(!loc.latlng) return console.log();
       let marker = L.marker(loc.latlng);
       marker.on('click', () => {
         if (currentIRLLocation.value === loc) {
@@ -166,5 +170,11 @@ function compareIRLLocations(a, b) {
   if (a.name < b.name) return -1;
   if (a.name > b.name) return 1;
   return 0;
+}
+
+// Value: String
+// Return: String
+function createGoogleMapsLink(location) {
+  return `https://www.google.com/maps/place/${location.street.replace(' ', '+')}+${location.postalcode.replace(' ', '+')}`
 }
 </script>
