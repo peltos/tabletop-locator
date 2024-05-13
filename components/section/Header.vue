@@ -8,17 +8,17 @@
           <p class="text-lime-700 dark:text-lime-500 font-bold text-base lg:text-lg leading-5">Tabletop <br> locator</p>
         </div>
         <Search class="md:hidden" @searchPrompt="emitPrompt" :screen="screen" />
-        <button class="hidden">
-        <ClientOnly> <!-- solved a Hydration node mismatch error -->
-          <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
-        </ClientOnly> 
+        <button class="md:hidden" @click="menuOpen = !menuOpen">
+          <ClientOnly> <!-- solved a Hydration node mismatch error -->
+            <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
+          </ClientOnly> 
         </button>
       </div>
-      <div class="hidden md:flex absolute md:static right-0 top-0 z-50 bg-stone-100 h-full dark:bg-stone-800 transition-colors p-4 md:p-0 flex flex-col items-end md:items-baseline gap-4">
-        <button class="md:hidden">
-        <ClientOnly> <!-- solved a Hydration node mismatch error -->
-          <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
-        </ClientOnly> 
+      <div :class="menuOpen ? '!right-0' : ''" class="md:flex transition-all absolute md:static right-[-50%] top-0 z-50 bg-stone-100 h-full dark:bg-stone-800 px-4 py-5 md:p-0 flex flex-col items-end md:items-baseline gap-4">
+        <button @click="menuOpen = !menuOpen" class="md:hidden">
+          <ClientOnly> <!-- solved a Hydration node mismatch error -->
+            <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
+          </ClientOnly> 
         </button>
         
         <div class="hidden md:flex gap-2">
@@ -77,6 +77,15 @@ const props = defineProps(['screen', 'options'])
 let screen = ref(props.screen);
 let options = computed(() => props.options);
 let darkMode = ref(false);
+let menuOpen = ref(false);
+
+onMounted(() => {
+  // check system darkmode preference
+  runColorMode((isDarkMode) => {
+    if (isDarkMode) setDarkMode(true);
+    else setDarkMode(false);
+  })
+});
 
 const emit = defineEmits(['emitScreen', 'emitPrompt'])
 function emitScreen(newScreen) {
@@ -89,16 +98,33 @@ function emitPrompt(newPrompt) {
 }
 
 function setDarkMode(newDarkMode) {
+  console.log(newDarkMode);
   darkMode.value = newDarkMode;
   useHead({
     bodyAttrs: {
       class: computed(() => {
         if (darkMode.value) return 'dark';
+        if (!darkMode.value) return '';
 
         return '';
       }),
     }
   })
+}
+
+
+function isDarkMode() { 
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function runColorMode(fn) {
+  if (!window.matchMedia) return;
+  
+  const query = window.matchMedia('(prefers-color-scheme: dark)');
+
+  fn(query.matches);
+
+  query.addEventListener('change', (event) => fn(event.matches));
 }
 
 </script>
