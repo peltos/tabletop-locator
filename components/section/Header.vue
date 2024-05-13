@@ -1,9 +1,9 @@
 <template>
   <div class="bg-stone-100 dark:bg-stone-800 z-20 w-full md:w-80 md:py-4 text-black dark:text-white transition-colors">
-    
+
     <!-- Top header section -->
     <div class="p-2 md:p-8 h-full border-r-4 border-stone-200 dark:border-stone-800">
-      
+
       <!-- Logo / mobile search section -->
       <div class="flex items-center gap-4 mb-4 justify-between">
         <div class="flex items-center gap-4">
@@ -15,18 +15,19 @@
         <button class="md:hidden" @click="menuOpen = !menuOpen">
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
             <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
-          </ClientOnly> 
+          </ClientOnly>
         </button>
       </div>
 
       <!-- Menu -->
-      <div :class="menuOpen ? '!right-0' : ''" class="md:flex transition-all absolute md:static right-[-50%] top-0 z-50 bg-stone-100 h-full dark:bg-stone-800 px-4 py-5 md:p-0 flex flex-col items-end md:items-baseline gap-4">
+      <div :class="menuOpen ? '!right-0' : ''"
+        class="md:flex transition-all absolute md:static right-[-50%] top-0 z-50 bg-stone-100 h-full dark:bg-stone-800 px-4 py-5 md:p-0 flex flex-col items-end md:items-baseline gap-4">
         <button @click="menuOpen = !menuOpen" class="md:hidden">
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
             <font-awesome-icon class="text-xl" :icon="['fas', 'bars']" />
-          </ClientOnly> 
+          </ClientOnly>
         </button>
-        
+
         <!-- IRL/Online switch (Desktop only) -->
         <div class="hidden md:flex gap-2">
           <button v-if="options" @click="emitScreen('map')" class="btn flex-1"
@@ -58,10 +59,10 @@
         </button>
       </div>
     </div>
-    
+
     <!-- Bottom header section (Mobile only) -->
-    <div class="md:hidden flex gap-2 p-2"> 
-      
+    <div class="md:hidden flex gap-2 p-2">
+
       <!-- IRL/Online switch (Mobile only) -->
       <button v-if="options" @click="emitScreen('map')" class="btn flex-1"
         :class="screen === 'map' ? 'btn-active' : ''">
@@ -91,11 +92,17 @@ let menuOpen = ref(false);
 
 // Return: Void
 onMounted(() => {
-  // check system darkmode preference
-  runColorMode((isDarkMode) => {
-    if (isDarkMode) setDarkMode(true);
+  // check system darkmode and/or localstorage darkmode preference
+  let darkmodeLocalStorage = localStorage.getItem("darkmode")
+  if (darkmodeLocalStorage) {
+    if (darkmodeLocalStorage === 'true') setDarkMode(true);
     else setDarkMode(false);
-  })
+  } else {
+    runColorMode((isDarkMode) => {
+      if (isDarkMode) setDarkMode(true);
+      else setDarkMode(false);
+    })
+  }
 });
 
 const emit = defineEmits(['emitScreen', 'emitPrompt'])
@@ -118,6 +125,7 @@ function emitPrompt(newPrompt) {
 // Return: Void
 function setDarkMode(newDarkMode) {
   darkMode.value = newDarkMode;
+  localStorage.setItem("darkmode", newDarkMode)
 
   useHead({
     bodyAttrs: {
@@ -132,7 +140,7 @@ function setDarkMode(newDarkMode) {
 }
 
 // Return: Boolean
-function isDarkMode() { 
+function isDarkMode() {
   return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 

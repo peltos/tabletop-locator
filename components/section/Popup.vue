@@ -5,7 +5,7 @@
 
     <!-- Popup header -->
     <div class="flex p-4 mx-4 justify-stretch items-stretch border-b-2 ">
-      <a v-if="location.url" :href="location.url" class="w-full text-xl font-bold text-center">
+      <a v-if="location.url" :href="location.url" target="_blank" class="w-full text-xl font-bold text-center">
         <h2>{{ location.name }}</h2>
       </a>
       <h2 v-else class="w-full text-xl font-bold text-center">
