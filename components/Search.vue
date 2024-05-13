@@ -18,10 +18,12 @@ const search = ref('');
 let prevSearch = ''
 let timeoutTyping;
 
+// Return: Void
 watch(screen, () => {
   search.value = ''
 })
 
+// Return: Void
 const submitForm = async () => {
   // to prevent multiple events firing on the same keystroke
   if (prevSearch !== search.value) {

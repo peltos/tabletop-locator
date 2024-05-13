@@ -89,6 +89,7 @@ let options = computed(() => props.options);
 let darkMode = ref(false);
 let menuOpen = ref(false);
 
+// Return: Void
 onMounted(() => {
   // check system darkmode preference
   runColorMode((isDarkMode) => {
@@ -99,22 +100,25 @@ onMounted(() => {
 
 const emit = defineEmits(['emitScreen', 'emitPrompt'])
 
-// Value: string
+// Value: String
+// Return: Void
 function emitScreen(newScreen) {
   emit('emitPrompt', ''); // reset prompt
   emit('emitScreen', newScreen); // for the parent
   screen.value = newScreen // for the child
 }
 
-// Value: string
+// Value: String
+// Return: Void
 function emitPrompt(newPrompt) {
   emit('emitPrompt', newPrompt);
 }
 
-// Value: boolean
+// Value: Boolean
+// Return: Void
 function setDarkMode(newDarkMode) {
-  console.log(newDarkMode);
   darkMode.value = newDarkMode;
+
   useHead({
     bodyAttrs: {
       class: computed(() => {
@@ -127,18 +131,17 @@ function setDarkMode(newDarkMode) {
   })
 }
 
-
+// Return: Boolean
 function isDarkMode() { 
   return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 
+// Value: Function
+// Return: Boolean
 function runColorMode(fn) {
   if (!window.matchMedia) return;
-  
   const query = window.matchMedia('(prefers-color-scheme: dark)');
-
   fn(query.matches);
-
   query.addEventListener('change', (event) => fn(event.matches));
 }
 

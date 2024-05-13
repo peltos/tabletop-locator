@@ -57,6 +57,7 @@ let doesHaveAnimation = ref(false);
 const route = useRoute()
 const router = useRouter();
 
+// Return: Void
 function urlQuerrySettings() {
   setTimeout(() => {
     doesHaveAnimation.value = true;
@@ -73,12 +74,16 @@ function urlQuerrySettings() {
 }
 urlQuerrySettings();
 
+// Value: String
+// Return: Void
 function setScreen(newScreen) {
   screen.value = newScreen;
   router.replace({ query: { ...router.query, screen: screen.value } });
   useHead({ title: 'Tabletop Locator | ' + screen.value.charAt(0).toUpperCase() + screen.value.slice(1) })
 }
-
+ 
+// Value: String
+// Return: Void
 function setPrompt(newPrompt) {
   prompt.value = newPrompt;
 }

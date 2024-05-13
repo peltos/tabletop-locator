@@ -26,6 +26,7 @@ let popupActive = ref(false);
 let timeoutPopupAnimation;
 
 // Value: string
+// Return: Void
 watch(prompt, (newPrompt) => {
   filterSearch(newPrompt); //filter data base on the prompt
   AddingMarkers(); // refresh the markers
@@ -35,9 +36,10 @@ watch(prompt, (newPrompt) => {
   timeoutPopupAnimation = setTimeout(() => {
     currentIRLLocation.value = {};
   }, 200)
-  return popupActive.value = false;
+  popupActive.value = false;
 })
 
+// Return: Void
 watch(screen, () => {
   filterSearch(''); // reset search
   
@@ -60,6 +62,7 @@ watch(screen, () => {
   },300)
 })
 
+// Return: Void
 onMounted(() => {
   // initializing
   map = L.map('map',{zoomControl: false}).setView(defaultCoords, 7);
@@ -86,6 +89,7 @@ onMounted(() => {
   AddingMarkers(); // init markers
 });
 
+// Return: Void
 function AddingMarkers() {
   if (markers) map.removeLayer(markers);
 
@@ -117,6 +121,7 @@ function AddingMarkers() {
 }
 
 // Value: string
+// Return: Void
 function filterSearch(newPrompt) {
   IRLLocationsFiltered.value = [] // reset IRLLocations locations
 
@@ -155,7 +160,8 @@ function filterSearch(newPrompt) {
   IRLLocationsFiltered.value.sort(compareIRLLocations);
 }
 
-// Value: string, string
+// Value: String, String
+// Return: Interger
 function compareIRLLocations(a, b) {
   if (a.name < b.name) return -1;
   if (a.name > b.name) return 1;

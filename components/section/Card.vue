@@ -2,14 +2,14 @@
   <li v-for="location in OnlineLocationsFiltered" class="bg-white dark:bg-stone-800 p-4 rounded-xl flex flex-col gap-2">
 
     <!-- Card Header -->
-    <div class="grid grid-cols-[3rem_1fr_100px] items-start gap-2">
-      <div class="bg-white w-12 h-12 rounded-full overflow-hidden">
-        <img class="object-contain w-12 h-12 self-center" :src="location.logo" :alt="'Logo ' + location.name">
-      </div>
-      <div class="w-[calc(100%-3rem)]">
+    <div class="grid grid-cols-[3rem_1fr_100px] items-start gap-2 group">
+      <a v-if="location.url" :href="location.url" target="_blank"  class="bg-white w-12 h-12 rounded-full overflow-hidden">
+        <img class="group-hover:p-0 object-contain w-12 h-12 p-[0.25rem] transition-all self-center" :src="location.logo" :alt="'Logo ' + location.name">
+      </a>
+      <a v-if="location.url" :href="location.url" target="_blank" class="w-[calc(100%-3rem)] !no-underline !text-white">
         <strong v-if="location.name" class="block">{{ location.name }} </strong>
         <span v-if="location.subtitle" class="block">{{ location.subtitle }} </span>
-      </div>
+      </a>
       <a v-if="location.url" :href="location.url" target="_blank" class="btn btn-full">
         <ClientOnly> <!-- solved a Hydration node mismatch error -->
           <font-awesome-icon :icon="['fas', 'globe']" />
@@ -24,7 +24,7 @@
       <p v-if="location.desc">{{ location.desc }}</p>
       <a v-if="location.url" :href="location.url">{{ location.url }}</a>
       <ul v-if="location.tags" class="mt-4 flex flex-wrap gap-2">
-        <li v-for="tag in location.tags"
+        <li v-for="tag in checkIfCategoriesExist(location)"
           class="bg-stone-300 dark:bg-stone-600 text-sm inline-block px-2 py-1 rounded-xl">{{ tag }}</li>
       </ul>
     </div>
@@ -32,16 +32,16 @@
     <!-- Card Social Footer -->
     <ul v-if="location.socials" class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4 break-all">
       <li v-for="(value, key) in location.socials" class="">
-        <a class="capitalize flex gap-2 items-center" :href="value">
+        <a class="group capitalize flex gap-2 items-center" :href="value">
           <div class="bg-stone-200 dark:bg-stone-600 text-black dark:text-white rounded-full p-1">
             <ClientOnly v-if="checkExistingFABrandicon(key)"> <!-- solved a Hydration node mismatch error -->
-              <font-awesome-icon class="w-6" :icon="['fab', key]" />
+              <font-awesome-icon class="w-6 group-hover:scale-125 transition-all" :icon="['fab', key]" />
             </ClientOnly>
             <ClientOnly v-else-if="key === 'email'"> <!-- solved a Hydration node mismatch error -->
-              <font-awesome-icon class="w-6" :icon="['fas', 'envelope']" />
+              <font-awesome-icon class="w-6 group-hover:scale-125 transition-all" :icon="['fas', 'envelope']" />
             </ClientOnly>
             <ClientOnly v-else> <!-- solved a Hydration node mismatch error -->
-              <font-awesome-icon class="w-6" :icon="['fas', 'globe']" />
+              <font-awesome-icon class="w-6 group-hover:scale-125 transition-all" :icon="['fas', 'globe']" />
             </ClientOnly>
           </div>
           {{ key }}
@@ -55,6 +55,7 @@
 import Fuse from 'fuse.js'
 
 import ONLINE_LOCATIONS from '../assets/data/onlineLocations.json';
+import CATEGORIES from '../assets/data/categories.json';
 let OnlineLocationsFiltered = ref([]);
 
 const props = defineProps(['prompt'])
@@ -63,6 +64,7 @@ let currentIRLLocation = ref({});
 let popupActive = ref(false);
 let timeoutPopupAnimation;
 
+// Return: Void
 watch(prompt, (newPrompt) => {
   filterSearch(newPrompt);
   clearTimeout(timeoutPopupAnimation);
@@ -72,11 +74,13 @@ watch(prompt, (newPrompt) => {
   return popupActive.value = false;
 })
 
+// Return: Void
 onMounted(() => {
   filterSearch('');
 });
 
-// Value: string
+// Value: String
+// Return: Void
 function filterSearch(newPrompt) {
   OnlineLocationsFiltered.value = [] // reset IRLLocations locations
 
@@ -94,14 +98,16 @@ function filterSearch(newPrompt) {
   OnlineLocationsFiltered.value.sort(compareIRLLocations);
 }
 
-// Value: string, string
+// Value: String, String
+// Return: Interger
 function compareIRLLocations(a, b) {
   if (a.name < b.name) return -1;
   if (a.name > b.name) return 1;
   return 0;
 }
 
-// Value: string
+// Value: String
+// Return: Boolean
 function checkExistingFABrandicon(icon) {
   if (icon === "discord" ||
     icon === "reddit" ||
@@ -114,5 +120,17 @@ function checkExistingFABrandicon(icon) {
     return true
   }
   return false
+}
+
+// Value: Object
+// Return: Array<string>
+function checkIfCategoriesExist(location) {
+  return location.tags.map(tag => {
+    let filteredTag = CATEGORIES.map(cat => {
+      if(cat.id === tag) return cat.lang[0].name //TODO: Make it international. It defaults to English
+    }).filter(fil => fil);
+    if(filteredTag.length > 0) return filteredTag[0];
+    else console.warn(`The tag '${tag}' from online location '${location.name}' is not a valid tag. Please check the list of categories to see which ones are valid.`);
+  }).filter((tag) => tag);
 }
 </script>
