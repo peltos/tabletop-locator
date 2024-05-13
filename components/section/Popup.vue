@@ -57,6 +57,7 @@ const props = defineProps(['location', 'popupActive'])
 const location = computed(() => props.location)
 const popupActive = computed(() => props.popupActive)
 
+// Value: string
 function createGoogleMapsLink(location) {
   return `https://www.google.com/maps/place/${location.street.replace(' ', '+')}+${location.postalcode.replace(' ', '+')}`
 }

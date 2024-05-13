@@ -25,6 +25,7 @@ let currentIRLLocation = ref({});
 let popupActive = ref(false);
 let timeoutPopupAnimation;
 
+// Value: string
 watch(prompt, (newPrompt) => {
   filterSearch(newPrompt); //filter data base on the prompt
   AddingMarkers(); // refresh the markers
@@ -115,6 +116,7 @@ function AddingMarkers() {
   map.addLayer(markers);
 }
 
+// Value: string
 function filterSearch(newPrompt) {
   IRLLocationsFiltered.value = [] // reset IRLLocations locations
 
@@ -153,6 +155,7 @@ function filterSearch(newPrompt) {
   IRLLocationsFiltered.value.sort(compareIRLLocations);
 }
 
+// Value: string, string
 function compareIRLLocations(a, b) {
   if (a.name < b.name) return -1;
   if (a.name > b.name) return 1;

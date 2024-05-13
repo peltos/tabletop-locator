@@ -1,6 +1,10 @@
 <template>
   <div class="bg-stone-100 dark:bg-stone-800 z-20 w-full md:w-80 md:py-4 text-black dark:text-white transition-colors">
+    
+    <!-- Top header section -->
     <div class="p-2 md:p-8 h-full border-r-4 border-stone-200 dark:border-stone-800">
+      
+      <!-- Logo / mobile search section -->
       <div class="flex items-center gap-4 mb-4 justify-between">
         <div class="flex items-center gap-4">
           <img class="hidden dark:block w-12" src="~/assets/logos/logo_emblem_white.svg" alt="Tabletop locator logo" />
@@ -14,6 +18,8 @@
           </ClientOnly> 
         </button>
       </div>
+
+      <!-- Menu -->
       <div :class="menuOpen ? '!right-0' : ''" class="md:flex transition-all absolute md:static right-[-50%] top-0 z-50 bg-stone-100 h-full dark:bg-stone-800 px-4 py-5 md:p-0 flex flex-col items-end md:items-baseline gap-4">
         <button @click="menuOpen = !menuOpen" class="md:hidden">
           <ClientOnly> <!-- solved a Hydration node mismatch error -->
@@ -21,6 +27,7 @@
           </ClientOnly> 
         </button>
         
+        <!-- IRL/Online switch (Desktop only) -->
         <div class="hidden md:flex gap-2">
           <button v-if="options" @click="emitScreen('map')" class="btn flex-1"
             :class="screen === 'map' ? 'btn-active' : ''">
@@ -39,6 +46,7 @@
           </button>
         </div>
 
+        <!-- Darkmode switch -->
         <button class="btn" @click="setDarkMode(!darkMode)">
           <ClientOnly v-if="darkMode"> <!-- solved a Hydration node mismatch error -->
             <font-awesome-icon :icon="['fas', 'sun']" />
@@ -51,8 +59,10 @@
       </div>
     </div>
     
-    <!-- Mobile section underneath the header -->
+    <!-- Bottom header section (Mobile only) -->
     <div class="md:hidden flex gap-2 p-2"> 
+      
+      <!-- IRL/Online switch (Mobile only) -->
       <button v-if="options" @click="emitScreen('map')" class="btn flex-1"
         :class="screen === 'map' ? 'btn-active' : ''">
         <ClientOnly> <!-- solved a Hydration node mismatch error -->
@@ -88,15 +98,20 @@ onMounted(() => {
 });
 
 const emit = defineEmits(['emitScreen', 'emitPrompt'])
+
+// Value: string
 function emitScreen(newScreen) {
   emit('emitPrompt', ''); // reset prompt
   emit('emitScreen', newScreen); // for the parent
   screen.value = newScreen // for the child
 }
+
+// Value: string
 function emitPrompt(newPrompt) {
   emit('emitPrompt', newPrompt);
 }
 
+// Value: boolean
 function setDarkMode(newDarkMode) {
   console.log(newDarkMode);
   darkMode.value = newDarkMode;

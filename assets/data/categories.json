@@ -89,5 +89,18 @@
         "name": "Wargames"
       }
     ]
+  },
+  {
+    "id": "community",
+    "lang": [
+      {
+        "countryCode": "en",
+        "name": "Community"
+      },
+      {
+        "countryCode": "nl",
+        "name": "Community"
+      }
+    ]
   }
 ]
