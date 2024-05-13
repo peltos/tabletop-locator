@@ -1,5 +1,3 @@
-
-
 {
   "nationality": "belgie",
   "countryCode": "be",
@@ -11,6 +9,366 @@
       "province": "limburg",
       "url": "https://www.spelhuis.be/",
       "desc": "Het Spelhuis is een spellenwinkel (met webshop) gelegen in Zonhoven, in het midden van. Limburg. In onze speciaalzaak vind je bordspellen"
+    },
+    {
+      "name": "Adriaensen",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Cuperusstraat 7/8",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Albion",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Doorniksestraat 52",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Bazinga!",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kazernelaan 313",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Brood en Spelen",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Stationsstraat 41",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "de Kolonisten",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Patersstraat 72/1",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Speelplekke",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Ieperstraat 45",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Spelacademie",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Broekstraat 31",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Spelgezel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Franklin Rooseveltlaan 140",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Demo-spel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Sint-Hubertusstraat 3",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Game Vault",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Hofstraat 36",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Happy Dayz",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Bogaertstraat 3 A",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Hermelijn",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Molenstraat 36",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "IDIAAL",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Liersesteenweg 5A1",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Ingelberts",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Bogaardenstraat 19",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Joshua Tree Games",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kerkstraat 28",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Level 21",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Hoogstraat 4",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Mertens Speelgoed",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Diestsesteenweg 61-63",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Mishra’s Playground",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Ninoofsesteenweg 104",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "MWM Products",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Sint-Reneldisplein 17",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Neverland",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Blankenbergse Steenweg 186",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Oberonn",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kempische steenweg 27",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Outpost",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Beggaardenstraat 6",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Outpost",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Rue de la Tribune 8",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Outpost",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Ottergemsesteenstraat 13",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Reuzespelplezier",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Stationstraat 32",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Sheep Games",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Marktstraat 13 B",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spelfanaat",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Putsesteenweg 17",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spelhuis",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Muizenstraat 51",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spelshop",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "A Van Looplein 11 2235",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Stip",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Rootenstraat 27",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "t Bazarke",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Statielei 113",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Hub Game Lounge",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Burgemeestersstraat 26",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Playground",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Playground – Station",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Pelikaanstraat 3/1270",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Tuf Tuf",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Heirbaan 274",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Worlds’ End Comics & Games",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Ketelvest 51B",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
     }
   ]
 }

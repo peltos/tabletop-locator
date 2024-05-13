@@ -10,6 +10,7 @@
       "street": "Zakkendragersteeg 7",
       "postalcode": "3511AA Utrecht",
       "url": "https://www.subcultures.nl/",
+      "tags": ["shop", "webshop", "ttrpg",  "boardgames", "cardgames", "tcg"],
       "desc": "Zin om samen een spelletje te doen? Samen met de leukste Utrechtse café's hosten we spelletjesavonden.  De hosts van Spellenwinkel Subcultures zorgen voor demo’s van de nieuwste games, maar je kunt ook zelf een spel meenemen. Aanmelden is niet nodig, kom langs en speel mee!"
     },
     {
@@ -20,6 +21,7 @@
       "street": "Oudegracht 183",
       "postalcode": "3511NE Utrecht",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -30,6 +32,7 @@
       "street": "Koestraat 20",
       "postalcode": "3811 HK Amersfoort",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -40,6 +43,7 @@
       "street": "Van Oldenbarneveltplaats 452",
       "postalcode": "3012 AP Rotterdam",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -50,6 +54,7 @@
       "street": "Radarstraat 10C",
       "postalcode": "2901 AV Capelle aan den IJssel",
       "url": "https://minihobby.nl/",
+      "tags": ["shop", "webshop", "wargames", "tcg"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -60,6 +65,7 @@
       "street": "Schoolstraat 12B",
       "postalcode": "2511 AX Den Haag",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -70,6 +76,7 @@
       "street": "Van Woustraat 69-hs",
       "postalcode": "1074 AD Amsterdam",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -80,6 +87,7 @@
       "street": "Rozengracht 99",
       "postalcode": "1016 LT Amsterdam",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -90,6 +98,7 @@
       "street": "Laat 68",
       "postalcode": "1811 EK Alkmaar",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -100,6 +109,7 @@
       "street": "Sassenstraat 15",
       "postalcode": "8011 PA Zwolle",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -110,6 +120,7 @@
       "street": "Korte Haaksbergerstraat 30, 30a",
       "postalcode": "7511 JS Enschede",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -120,6 +131,7 @@
       "street": "Grote Kromme Elleboog 1",
       "postalcode": "9712 BJ Groningen",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -130,6 +142,7 @@
       "street": "Nieuwestad 79",
       "postalcode": "8911 CK Leeuwarden",
       "url": "https://www.vliegeruit.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "Vlieg-er-uit is dé webshop voor tabletop games van Games Workshop! Maar wist je dat je niet alleen online, maar ook in onze eigen winkel terecht kunt? In het centrum van Leeuwarden hebben we namelijk een prachtige en grote zaak. Daar vind je ook veel andere (bord)spellen, speelgoed, vliegers en nog veel meer! Onze enthousiaste medewerkers staan voor je klaar om je van advies te voorzien. En mocht je vragen hebben over het spelen van Warhammer, het bouwen en verven van modellen of iets anders, dan krijg je ook direct uitleg! Dus ben je in de buurt van Leeuwarden? Kom dan gewoon eens bij ons langs en bekijk meteen onze waanzinnige collectie! Met onze webwinkel heb je natuurlijk het voordeel dat je de deur niet uit hoeft om een nieuwe set of losse toebehoren voor de Warhammer tabletop games te kopen. Woon je wat verder weg, dan bestel je die namelijk net zo makkelijk, voordelig en snel online bij ons. Niet alleen vind je bij Vlieg-er-uit de grootste Warhammer collectie voor de scherpste prijzen, ook verf, kwasten, lijm en andere belangrijke accessoires vind je altijd scherpgeprijsd in ons online aanbod."
     },
     {
@@ -140,6 +153,7 @@
       "street": "Torenstraat 21",
       "postalcode": "4811 XV Breda",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -150,6 +164,7 @@
       "street": "Korvelseweg 58",
       "postalcode": "5025 JJ Tilburg",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     },
     {
@@ -160,7 +175,551 @@
       "street": "Kleine Berg 50",
       "postalcode": "5611 JV Eindhoven",
       "url": "https://www.warhammer.com/",
+      "tags": ["shop", "webshop", "wargames"],
       "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "4 Your Games",
+      "logo": "https://4yourgames.nl/wp-content/uploads/logo-4yourgames.png",
+      "latlng": [51.8135512586062, 4.66065912316283],
+      "province": "zuid-holland",
+      "street": "Voorstraat 410",
+      "postalcode": "3311 CX Dordrecht",
+      "url": "https://www.4yourgames.nl/",
+      "tags": ["shop", "webshop", "ttrpg",  "boardgames", "cardgames", "tcg"],
+      "desc": "4 Your Games is een specialist op het gebied van Bordspellen, Kaartspellen & Trading Card Games. In ons assortiment vind je voor iedereen wel iets, en natuurlijk zijn wij er om u te adviseren. Wij zetten ons in voor snelle leveringen, een goede service en een eerlijke prijs. In onze winkel hebben wij ook de mogelijkheid om een groot aantal spellen aan u te demonstreren. Veel speel plezier en tot snel"
+    },
+    {
+      "name": "Bordspelers",
+      "logo": "",
+      "latlng": [52.010701111593725, 4.707676357275323],
+      "province": "zuid-holland",
+      "street": "Lange Groenendaal 82",
+      "postalcode": "2801 LV Gouda",
+      "url": "https://www.magicers.nl/webshop/bordspellen",
+      "tags": ["shop", "webshop", "boardgames", "cardgames", "tcg"],
+      "desc": "Magicers.nl is een webshop die het Magic: the Gathering-spelers makkelijk maakt door prijzen van Magic kaarten te vergelijken met andere winkels."
+    },
+    {
+      "name": "Daans shop",
+      "logo": "https://daansshop.com/cdn/shop/files/logo_360x.png?v=1614317057",
+      "latlng": [51.99389685437936, 4.477456587468266],
+      "province": "zuid-holland",
+      "street": "Kerkstraat 13",
+      "postalcode": "2651 CD Berkel en Rodenrijs",
+      "url": "https://daansshop.com/",
+      "tags": ["shop", "webshop", "ttrpg", "boardgames", "cardgames", "tcg", "wargames"],
+      "desc": "Danielle Aaftink (Dè Daan) en Bas Pastoor hebben in 2016 Daans Shop opgericht. Na enige omzwervingen zijn zij in 2020 in Berkel en Rodenrijs terecht gekomen. De start was tijdens Corona niet makkelijk, echter zijn wij inmiddels meer dan 3 jaar in Berkel en Rodenrijs gevestigd. "
+    },
+    {
+      "name": "De Dobbelsteen Den Bosch",
+      "logo": "https://cdn.webshopapp.com/shops/233321/themes/127643/assets/logo.png?20230606113259",
+      "latlng": [51.68699150187395, 5.30113677208505],
+      "province": "noord-brabant",
+      "street": "Vughterstraat 56",
+      "postalcode": "5211 GK 's-Hertogenbosch",
+      "url": "https://www.dedobbelsteen.com/",
+      "desc": "Geen beschrijving gevonden"
+    },
+    {
+      "name": "De Dondersteen",
+      "logo": "https://de-dondersteen.nl/webshop_1/icons/Logo-DDO.svg",
+      "latlng": [52.26666739132439, 6.795091137956459],
+      "province": "overijssel",
+      "street": "Wemenstraat 18",
+      "postalcode": "7551 EX Hengelo",
+      "url": "https://de-dondersteen.nl/",
+      "desc": ""
+    },
+    {
+      "name": "De Kleine Kapitein",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Botersloot 173",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Koperen Pion",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Appelstraat 206",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Purperen Draak",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Nieuwe Ebbingestraat 86a",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Spellenhoorn",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Nieuwsteeg 34",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Spellenpoort",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Scherbierstraat 4-6",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Dé Spellenwinkel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Speelhuislaan 68B",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Tafelridder",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oude Herengracht 11A",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Tinnen Soldaat",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Soembalaan 12",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De Vliegershop",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Turfmarkt 2",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "De windroos",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Minckelersstraat 14",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Donner",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Coolsingel 129",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Friends & Foes",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Roelof Hartstraat 80",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Game Time",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Generaal Cronjestraat 47-49",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Goed Speelgoed",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Bloemendaalseweg 29",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Het Hobbelpaardje",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Julianalaan 39",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Het Lab",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oudegracht 207",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Hoge Ogen",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Hooftstraat 87",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Kleine Reus",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Dr. Kuyperkade 19-20",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Koning Bordspel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kosmonaut 24",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Koning Willem",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kleine Overstraat 26",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Labyrinth Eindhoven",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Lardinoisstraat 22",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Labyrinth Tilburg",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Schouwburgring 141",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Meeples Bordspellen",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Waterfront 81",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Moenen & Mariken",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Van Welderenstraat 70",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "NeverNeverLand",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oudegracht 202",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Paaprika",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Beukerstraat 66",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Replay Toys",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Zandstraat 7",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Schaak en Go winkel Het Paard",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Haarlemmerdijk 173",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Speel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Speeleiland",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Drie Trommeltjessteeg 12-14",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spel en Meer",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Dorpstraat 163A",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Speldorado",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Hippolytusbuurt 21-25",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spelkwartier",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Steenstraat 4",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellekijn",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Nieuwestad 79",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellenhuis",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kruisweg 60a",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellenhuis",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Torenstraat 142",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellenrijk",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Zaagstraat 1-13",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellentoren",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Schoutenstraat 28",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Spellenwinkel.nl",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Rotterdamseweg 370 A9",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Sport en Spel",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Ceintuurbaan 57-59",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Subcultures",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oudegracht 183",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Summoner",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Olieslagweg 82",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Gamekeeper",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Hartenstraat 14",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Gamekeeper",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Rembrandtweg 45",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "The Joker",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oudegracht 230",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Vendetta Spellencentrum",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Bussumerstraat 34b",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Villa Wammus",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Kapelstraat 4",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "Visser Speelgoed",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Langekerkstraat 2-6",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
+    },
+    {
+      "name": "WirWar",
+      "logo": "",
+      "latlng": [0, 0],
+      "province": "",
+      "street": "Oude Kijk in 't Jatstraat 40",
+      "postalcode": "",
+      "url": "",
+      "desc": ""
     }
   ]
 }
