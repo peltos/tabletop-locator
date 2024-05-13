@@ -20,7 +20,147 @@
       "street": "Oudegracht 183",
       "postalcode": "3511NE Utrecht",
       "url": "https://www.warhammer.com/",
-      "desc": "placeholder"
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.15360977919748, 5.388686922641079],
+      "province": "utrecht",
+      "street": "Koestraat 20",
+      "postalcode": "3811 HK Amersfoort",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [51.91935387111396, 4.475892007337501],
+      "province": "zuid-holland",
+      "street": "Van Oldenbarneveltplaats 452",
+      "postalcode": "3012 AP Rotterdam",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "MiniHobby | Wargaming Store",
+      "logo": "https://minihobby.nl/cdn/shop/files/MH_Logo_-_Groot.png?pad_color=fff&v=1634368062&width=720",
+      "latlng": [51.911487556435446, 4.564181330058291],
+      "province": "zuid-holland",
+      "street": "Radarstraat 10C",
+      "postalcode": "2901 AV Capelle aan den IJssel",
+      "url": "https://minihobby.nl/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.076671224456895, 4.308169251937735],
+      "province": "zuid-holland",
+      "street": "Schoolstraat 12B",
+      "postalcode": "2511 AX Den Haag",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer Amsterdam - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.35540193707019, 4.901069555965902],
+      "province": "noord-holland",
+      "street": "Van Woustraat 69-hs",
+      "postalcode": "1074 AD Amsterdam",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer store Amsterdam West - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.37298431627537, 4.879952054222975],
+      "province": "noord-holland",
+      "street": "Rozengracht 99",
+      "postalcode": "1016 LT Amsterdam",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.629164449456844, 4.7507890722129344],
+      "province": "noord-holland",
+      "street": "Laat 68",
+      "postalcode": "1811 EK Alkmaar",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.511656496365326, 6.093520262519074],
+      "province": "overijssel",
+      "street": "Sassenstraat 15",
+      "postalcode": "8011 PA Zwolle",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [52.22012535624657, 6.892564771888095],
+      "province": "overijssel",
+      "street": "Korte Haaksbergerstraat 30, 30a",
+      "postalcode": "7511 JS Enschede",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [53.218115993374376, 6.5626294026578575],
+      "province": "groningen",
+      "street": "Grote Kromme Elleboog 1",
+      "postalcode": "9712 BJ Groningen",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Vlieg-er-uit",
+      "logo": "https://www.vliegeruit.com/image/catalog/NewSite/logo-vliegeruit-2022-v3.svg",
+      "latlng": [53.20108429952758, 5.793585231744746],
+      "province": "friesland",
+      "street": "Nieuwestad 79",
+      "postalcode": "8911 CK Leeuwarden",
+      "url": "https://www.vliegeruit.com/",
+      "desc": "Vlieg-er-uit is dé webshop voor tabletop games van Games Workshop! Maar wist je dat je niet alleen online, maar ook in onze eigen winkel terecht kunt? In het centrum van Leeuwarden hebben we namelijk een prachtige en grote zaak. Daar vind je ook veel andere (bord)spellen, speelgoed, vliegers en nog veel meer! Onze enthousiaste medewerkers staan voor je klaar om je van advies te voorzien. En mocht je vragen hebben over het spelen van Warhammer, het bouwen en verven van modellen of iets anders, dan krijg je ook direct uitleg! Dus ben je in de buurt van Leeuwarden? Kom dan gewoon eens bij ons langs en bekijk meteen onze waanzinnige collectie! Met onze webwinkel heb je natuurlijk het voordeel dat je de deur niet uit hoeft om een nieuwe set of losse toebehoren voor de Warhammer tabletop games te kopen. Woon je wat verder weg, dan bestel je die namelijk net zo makkelijk, voordelig en snel online bij ons. Niet alleen vind je bij Vlieg-er-uit de grootste Warhammer collectie voor de scherpste prijzen, ook verf, kwasten, lijm en andere belangrijke accessoires vind je altijd scherpgeprijsd in ons online aanbod."
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [51.588897804656305, 4.774616827433031],
+      "province": "noord-brabant",
+      "street": "Torenstraat 21",
+      "postalcode": "4811 XV Breda",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [51.552148536635315, 5.077369000089013],
+      "province": "noord-brabant",
+      "street": "Korvelseweg 58",
+      "postalcode": "5025 JJ Tilburg",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
+    },
+    {
+      "name": "Warhammer - Games Workshop",
+      "logo": "https://seeklogo.com/images/W/warhammer-logo-B402F14BAB-seeklogo.com.png",
+      "latlng": [51.43637178127785, 5.474447414817509],
+      "province": "noord-brabant",
+      "street": "Kleine Berg 50",
+      "postalcode": "5611 JV Eindhoven",
+      "url": "https://www.warhammer.com/",
+      "desc": "At the core of Warhammer are the highly-detailed plastic miniatures that represent the characters and warriors of its settings. How you form your collection is entirely up to you – muster an army for playing games, build and paint the miniatures you love, create a beautiful display, or something else entirely!"
     }
   ]
 }
